@@ -13,7 +13,8 @@ const ProductSchema = new mongoose.Schema(
             type: String,
             enum: ["product", "service"],
             required: true
-        }
+        },
+        inStock: { type: Boolean, default: true },
     }, { timestamps: true }
 );
 
